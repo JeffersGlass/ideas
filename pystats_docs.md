@@ -124,7 +124,9 @@ The number of times each uop was executed.
 
 ### Uop pair counts
 
-The number of times each uop each other uop.
+The number of times each uop follows each other uop.
+
+The 'compatibility' column indicates whether each pair of uops has an overlapping use of the oparg, operand, and target. This is to make it simpler to tell which uops can be combined into a superinstruction without changing the instruction format.
 
 ### Unsupported opcodes
 
